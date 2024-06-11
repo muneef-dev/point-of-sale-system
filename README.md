@@ -1,6 +1,6 @@
 # Point of Sale (POS) System
 
-The Point of Sale (POS) System is a comprehensive application developed using Java, JavaFX, and MySQL, aimed at streamlining sales and inventory management within retail environments. It prioritizes user-friendly interfaces and efficient programming to effectively meet the needs of the retail industry.
+The Point of Sale (POS) System is a comprehensive application developed using Java, JavaFX, and MySQL with Hibernate, aimed at streamlining sales, user and inventory management within retail environments. It prioritizes user-friendly interfaces and efficient programming to effectively meet the needs of the retail industry.
 
 ## Table of Contents
 
@@ -13,7 +13,7 @@ The Point of Sale (POS) System is a comprehensive application developed using Ja
 
 ## Introduction
 
-The Point of Sale (POS) System is a standalone application developed to automate various sales and inventory management tasks within a retail environment. Its functionalities include product management, sales processing, inventory management, customer management, and reporting. The system aims to provide a user-friendly interface and efficient programming to meet the retail industry's needs effectively.
+The Point of Sale (POS) System is a standalone application developed to automate various sales and inventory management tasks within a retail environment. Its functionalities include product management, sales processing, inventory management, customer management, user management and reporting. The system aims to provide a user-friendly interface and efficient programming to meet the retail industry's needs effectively.
 
 ## Functionality
 
