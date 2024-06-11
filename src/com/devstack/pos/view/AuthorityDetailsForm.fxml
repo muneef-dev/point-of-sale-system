@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="529.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.AuthoritiesDetailsFormController">
+   <children>
+      <AnchorPane layoutX="28.0" layoutY="24.0" prefHeight="159.0" prefWidth="784.0" style="-fx-background-color: F9EBEA;">
+         <children>
+            <Label layoutX="14.0" layoutY="20.0" text="User Email">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUserEmail" layoutX="216.0" layoutY="20.0" text="moha@gmail.com">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="201.0" layoutY="20.0" text=":">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="50.0" text="Role">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRole" layoutX="216.0" layoutY="50.0" text="Admin">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="201.0" layoutY="50.0" text=":">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="80.0" text="Availability">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAvailability" layoutX="216.0" layoutY="80.0" text="available">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="201.0" layoutY="80.0" text=":">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="110.0" text="Display Name">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDisplayName" layoutX="216.0" layoutY="110.0" text="Moha">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="201.0" layoutY="110.0" text=":">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblOfAccessPointsOfOptions" layoutX="28.0" layoutY="208.0" prefHeight="294.0" prefWidth="784.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="131.0" text="#Id" />
+            <TableColumn fx:id="colAccessPoint" prefWidth="289.0" text="Access Point" />
+            <TableColumn fx:id="colCrud" minWidth="5.0" prefWidth="231.0" text="CRUD" />
+            <TableColumn fx:id="colOption" minWidth="5.0" prefWidth="131.0" text="Option" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

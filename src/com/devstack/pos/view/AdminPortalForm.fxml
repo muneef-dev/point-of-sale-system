@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminPortalContext" prefHeight="555.0" prefWidth="1014.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.AdminPortalFormController">
+   <children>
+      <AnchorPane layoutY="60.0" prefHeight="495.0" prefWidth="1014.0">
+         <children>
+            <BarChart layoutX="13.0" layoutY="175.0" prefHeight="312.0" prefWidth="739.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <AnchorPane layoutX="11.0" layoutY="53.0" prefHeight="109.0" prefWidth="239.0" style="-fx-background-color: F9EBEA;">
+               <children>
+                  <Label layoutX="19.0" layoutY="8.0" text="Invoices" textFill="#ff500a">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutY="1.0" prefHeight="109.0" prefWidth="6.0" style="-fx-background-color: ff500a;" />
+                  <Label layoutX="19.0" layoutY="38.0" text="500" textFill="#ff500a">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="79.0" text="Today : 150" />
+                  <Label layoutX="139.0" layoutY="79.0" text="This Month : 150" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane layoutX="262.0" layoutY="53.0" prefHeight="109.0" prefWidth="239.0" style="-fx-background-color: F9EBEA;">
+               <children>
+                  <Label layoutX="19.0" layoutY="8.0" text="Income" textFill="#ff500a">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutY="1.0" prefHeight="109.0" prefWidth="6.0" style="-fx-background-color: ff500a;" />
+                  <Label layoutX="19.0" layoutY="38.0" text="5M" textFill="#ff500a">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="79.0" text="Today : 150k" />
+                  <Label layoutX="139.0" layoutY="79.0" text="This Month : 150" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane layoutX="514.0" layoutY="53.0" prefHeight="109.0" prefWidth="239.0" style="-fx-background-color: F9EBEA;">
+               <children>
+                  <Label layoutX="19.0" layoutY="8.0" text="Customers" textFill="#ff500a">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <AnchorPane layoutY="1.0" prefHeight="109.0" prefWidth="6.0" style="-fx-background-color: ff500a;" />
+                  <Label layoutX="19.0" layoutY="38.0" text="50M" textFill="#ff500a">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="80.0" text="GOLD : 150">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="172.0" layoutY="81.0" text="SILVER : 150">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="85.0" layoutY="81.0" text="PLATINUM : 150">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+            <AnchorPane layoutX="764.0" layoutY="53.0" prefHeight="109.0" prefWidth="239.0" style="-fx-background-color: F9EBEA;">
+               <children>
+                  <Label layoutX="19.0" layoutY="8.0" text="Suppliers" textFill="#ff500a">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutY="1.0" prefHeight="109.0" prefWidth="6.0" style="-fx-background-color: ff500a;" />
+                  <Label layoutX="19.0" layoutY="38.0" text="500" textFill="#ff500a">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="79.0" text="Today : 50" />
+                  <Label layoutX="139.0" layoutY="79.0" text="This Month : 250" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <TabPane layoutX="763.0" layoutY="174.0" prefHeight="312.0" prefWidth="239.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Expiring soon">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane layoutY="9.0" prefHeight="80.0" prefWidth="239.0" style="-fx-background-color: F9EBEA;">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="8.0" text="Product Code" />
+                                    <Label layoutX="10.0" layoutY="24.0" text="Product Name" />
+                                    <Label layoutX="10.0" layoutY="39.0" text="Expire Date" />
+                                    <Label layoutX="10.0" layoutY="55.0" text="Availabe Quantity" />
+                                    <Label layoutX="127.0" layoutY="8.0" text="P-001" />
+                                    <Label layoutX="127.0" layoutY="24.0" text="Dettol-500ML" />
+                                    <Label layoutX="127.0" layoutY="39.0" text="2023-12-31" />
+                                    <Label layoutX="127.0" layoutY="55.0" text="200" />
+                                    <Label layoutX="112.0" layoutY="8.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="23.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="38.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="55.0" text=":" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutY="98.0" prefHeight="80.0" prefWidth="239.0" style="-fx-background-color: F9EBEA;">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="8.0" text="Product Code" />
+                                    <Label layoutX="10.0" layoutY="24.0" text="Product Name" />
+                                    <Label layoutX="10.0" layoutY="39.0" text="Expire Date" />
+                                    <Label layoutX="10.0" layoutY="55.0" text="Availabe Quantity" />
+                                    <Label layoutX="127.0" layoutY="8.0" text="P-001" />
+                                    <Label layoutX="127.0" layoutY="24.0" text="Dettol-500ML" />
+                                    <Label layoutX="127.0" layoutY="39.0" text="2023-12-31" />
+                                    <Label layoutX="127.0" layoutY="55.0" text="200" />
+                                    <Label layoutX="112.0" layoutY="8.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="23.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="38.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="55.0" text=":" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutY="187.0" prefHeight="80.0" prefWidth="239.0" style="-fx-background-color: F9EBEA;">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="8.0" text="Product Code" />
+                                    <Label layoutX="10.0" layoutY="24.0" text="Product Name" />
+                                    <Label layoutX="10.0" layoutY="39.0" text="Expire Date" />
+                                    <Label layoutX="10.0" layoutY="55.0" text="Availabe Quantity" />
+                                    <Label layoutX="127.0" layoutY="8.0" text="P-001" />
+                                    <Label layoutX="127.0" layoutY="24.0" text="Dettol-500ML" />
+                                    <Label layoutX="127.0" layoutY="39.0" text="2023-12-31" />
+                                    <Label layoutX="127.0" layoutY="55.0" text="200" />
+                                    <Label layoutX="112.0" layoutY="8.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="23.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="38.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="55.0" text=":" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Lower Quantity">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="283.0" prefWidth="339.0">
+                           <children>
+                              <AnchorPane layoutY="9.0" prefHeight="80.0" prefWidth="239.0" style="-fx-background-color: F9EBEA;">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="8.0" text="Product Code" />
+                                    <Label layoutX="10.0" layoutY="24.0" text="Product Name" />
+                                    <Label layoutX="10.0" layoutY="39.0" text="Expire Date" />
+                                    <Label layoutX="10.0" layoutY="55.0" text="Availabe Quantity" />
+                                    <Label layoutX="127.0" layoutY="8.0" text="P-001" />
+                                    <Label layoutX="127.0" layoutY="24.0" text="Dettol-500ML" />
+                                    <Label layoutX="127.0" layoutY="39.0" text="2023-12-31" />
+                                    <Label layoutX="127.0" layoutY="55.0" text="200" />
+                                    <Label layoutX="112.0" layoutY="8.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="23.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="38.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="55.0" text=":" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutY="98.0" prefHeight="80.0" prefWidth="239.0" style="-fx-background-color: F9EBEA;">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="8.0" text="Product Code" />
+                                    <Label layoutX="10.0" layoutY="24.0" text="Product Name" />
+                                    <Label layoutX="10.0" layoutY="39.0" text="Expire Date" />
+                                    <Label layoutX="10.0" layoutY="55.0" text="Availabe Quantity" />
+                                    <Label layoutX="127.0" layoutY="8.0" text="P-001" />
+                                    <Label layoutX="127.0" layoutY="24.0" text="Dettol-500ML" />
+                                    <Label layoutX="127.0" layoutY="39.0" text="2023-12-31" />
+                                    <Label layoutX="127.0" layoutY="55.0" text="200" />
+                                    <Label layoutX="112.0" layoutY="8.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="23.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="38.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="55.0" text=":" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutY="187.0" prefHeight="80.0" prefWidth="239.0" style="-fx-background-color: F9EBEA;">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="8.0" text="Product Code" />
+                                    <Label layoutX="10.0" layoutY="24.0" text="Product Name" />
+                                    <Label layoutX="10.0" layoutY="39.0" text="Expire Date" />
+                                    <Label layoutX="10.0" layoutY="55.0" text="Availabe Quantity" />
+                                    <Label layoutX="127.0" layoutY="8.0" text="P-001" />
+                                    <Label layoutX="127.0" layoutY="24.0" text="Dettol-500ML" />
+                                    <Label layoutX="127.0" layoutY="39.0" text="2023-12-31" />
+                                    <Label layoutX="127.0" layoutY="55.0" text="200" />
+                                    <Label layoutX="112.0" layoutY="8.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="23.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="38.0" text=":" />
+                                    <Label layoutX="112.0" layoutY="55.0" text=":" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+            <JFXButton buttonType="RAISED" layoutX="11.0" layoutY="14.0" onAction="#userManagementOnAction" style="-fx-background-color: F9EBEA; -fx-border-color: FF500A;" text="User Management">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="133.0" layoutY="14.0" onAction="#userRoleAndAuthoritiesOnAction" style="-fx-background-color: F9EBEA; -fx-border-color: FF500A;" text="User Roles &amp; Authorities">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="286.0" layoutY="14.0" onAction="#incomeAndReportOnAction" style="-fx-background-color: F9EBEA; -fx-border-color: FF500A;" text="Income &amp; Report">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="401.0" layoutY="14.0" onAction="#manageInventoryOnAction" style="-fx-background-color: F9EBEA; -fx-border-color: FF500A;" text="Manage Inventory">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="521.0" layoutY="14.0" onAction="#customerManagementOnAction" style="-fx-background-color: F9EBEA; -fx-border-color: FF500A;" text="Customer Management">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="671.0" layoutY="14.0" onAction="#dealsAndDiscountOnAction" style="-fx-background-color: F9EBEA; -fx-border-color: FF500A;" text="Deals &amp; Discount">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="787.0" layoutY="14.0" onAction="#reportAndStatisticsOnAction" style="-fx-background-color: F9EBEA; -fx-border-color: FF500A;" text="Report &amp; Statistics">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="910.0" layoutY="14.0" onAction="#userActivityOnAction" style="-fx-background-color: F9EBEA; -fx-border-color: FF500A;" text="User Activities">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="60.0" prefWidth="1014.0" style="-fx-background-color: FF500A;">
+         <children>
+            <Label layoutX="56.0" layoutY="16.0" text="Admin Portal" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label layoutX="851.0" layoutY="16.0" text="Admin Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="366.0" layoutY="13.0" prefHeight="35.0" prefWidth="270.0" promptText="Search Here" style="-fx-background-radius: 50;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons/icons8-hamburger-menu-50.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="969.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons/icons8-expand-arrow-52.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginContext" prefHeight="555.0" prefWidth="1014.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.LoginFormController">
+   <children>
+      <AnchorPane prefHeight="555.0" prefWidth="401.0">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="169.0" layoutX="117.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/Wattpad-logo-vector.svg.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="169.0" layoutY="79.0" text="Welcome to" />
+            <JFXButton buttonType="RAISED" layoutX="47.0" layoutY="362.0" onAction="#btnLoginOnAction" prefHeight="47.0" prefWidth="307.0" style="-fx-background-color: FF500A; -fx-background-radius: 10;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="txtEmail" focusColor="#ff500a" labelFloat="true" layoutX="50.0" layoutY="195.0" prefHeight="47.0" prefWidth="307.0" promptText="Email" style="-fx-background-radius: 100;" text="admin@gmail.com">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassword" focusColor="#ff500a" labelFloat="true" layoutX="47.0" layoutY="278.0" prefHeight="47.0" prefWidth="307.0" promptText="Password" style="-fx-background-radius: 50;" text="861rGM">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="401.0" prefHeight="555.0" prefWidth="613.0">
+         <children>
+            <ImageView fitHeight="555.0" fitWidth="613.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/Empire-State-Building-view-from-uptown_by_Laurence-Norah-2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

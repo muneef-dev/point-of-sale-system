@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="newSystemUserContext" prefHeight="555.0" prefWidth="1014.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.NewSystemUserFormController">
+   <children>
+      <AnchorPane layoutY="60.0" prefHeight="495.0" prefWidth="1014.0">
+         <children>
+            <JFXTextField fx:id="txtUserName" focusColor="#ff500a" labelFloat="true" layoutX="268.0" layoutY="22.0" prefHeight="38.0" prefWidth="226.0" promptText="User name">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmbUserRole" focusColor="#ff500a" labelFloat="true" layoutX="18.0" layoutY="22.0" prefHeight="38.0" prefWidth="226.0" promptText="User Role" />
+            <JFXButton fx:id="btnSubmit" buttonType="RAISED" layoutX="766.0" layoutY="22.0" onAction="#submitDataOnAction" prefHeight="38.0" prefWidth="226.0" style="-fx-background-color: F9EBEA; -fx-border-color: FF500A;" text="Submit Data">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtDisplayName" focusColor="#ff500a" labelFloat="true" layoutX="517.0" layoutY="22.0" prefHeight="38.0" prefWidth="226.0" promptText="Display name">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXTextField>
+            <TextField fx:id="txtSearch" layoutX="18.0" layoutY="83.0" prefHeight="38.0" prefWidth="477.0" promptText="Search here">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <TableView fx:id="tblUser" layoutX="18.0" layoutY="143.0" prefHeight="333.0" prefWidth="975.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="131.0" text="#Id" />
+                <TableColumn fx:id="colUserRole" prefWidth="92.0" text="User Role" />
+                  <TableColumn fx:id="colStatus" minWidth="5.0" prefWidth="105.0" text="Status" />
+                  <TableColumn fx:id="colDisplayName" prefWidth="157.0" text="Display Name" />
+                  <TableColumn fx:id="colEmail" prefWidth="289.0" text="Email" />
+                  <TableColumn fx:id="colDelete" prefWidth="106.0" text="Delete" />
+                  <TableColumn fx:id="colModify" prefWidth="94.0" text="Modify" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="btnNewSystemUser" buttonType="RAISED" layoutX="766.0" layoutY="82.0" onAction="#addNewSystemUserOnAction" prefHeight="38.0" prefWidth="226.0" style="-fx-background-color: F9EBEA; -fx-border-color: FF500A;" text="+ New System User">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="60.0" prefWidth="1014.0" style="-fx-background-color: FF500A;">
+         <children>
+            <Label layoutX="47.0" layoutY="16.0" text="New System User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="851.0" layoutY="16.0" text="Admin Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="366.0" layoutY="13.0" prefHeight="35.0" prefWidth="270.0" promptText="Search Here" style="-fx-background-radius: 50;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="969.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons/icons8-expand-arrow-52.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="14.0" layoutY="16.0" onMouseClicked="#backToHomeOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons/icons8-double-left-52.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

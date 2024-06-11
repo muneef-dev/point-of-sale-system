@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="529.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.SupplierDetailsFormController">
+   <children>
+      <AnchorPane layoutX="28.0" layoutY="24.0" prefHeight="159.0" prefWidth="563.0" style="-fx-background-color: F9EBEA;">
+         <children>
+            <Label layoutX="14.0" layoutY="35.0" text="Id">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblId" layoutX="216.0" layoutY="35.0" text="001">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="201.0" layoutY="35.0" text=":">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="65.0" text="Supplier Name">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSupplierName" layoutX="216.0" layoutY="65.0" text="Jacksparrow">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="201.0" layoutY="65.0" text=":">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="95.0" text="Contact">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblContact" layoutX="216.0" layoutY="95.0" text="0956101631">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="201.0" layoutY="95.0" text=":">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblProductsOfSuppliers" layoutX="28.0" layoutY="208.0" prefHeight="294.0" prefWidth="563.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="170.0" text="#Id" />
+            <TableColumn fx:id="colAccessPoint" prefWidth="392.0" text="Product Name" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

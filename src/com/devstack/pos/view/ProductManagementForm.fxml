@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="productManagementContext" prefHeight="555.0" prefWidth="1014.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.ProductManagementFormController">
+   <children>
+      <AnchorPane layoutY="60.0" prefHeight="495.0" prefWidth="1014.0">
+         <children>
+            <JFXTextField fx:id="txtDescription" focusColor="#ff500a" labelFloat="true" layoutX="505.0" layoutY="18.0" prefHeight="38.0" prefWidth="226.0" promptText="Description">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmbCategory" focusColor="#ff500a" labelFloat="true" layoutX="247.0" layoutY="18.0" prefHeight="38.0" prefWidth="226.0" promptText="Category" />
+            <JFXButton buttonType="RAISED" layoutX="503.0" layoutY="93.0" onAction="#submitDataOnAction" prefHeight="40.0" prefWidth="490.0" style="-fx-background-color: F9EBEA; -fx-border-color: FF500A;" text="Submit Data">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtBrand" focusColor="#ff500a" labelFloat="true" layoutX="767.0" layoutY="18.0" prefHeight="38.0" prefWidth="226.0" promptText="Brand">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXTextField>
+            <TextField fx:id="txtSearch" layoutX="18.0" layoutY="206.0" prefHeight="38.0" prefWidth="477.0" promptText="Search here">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <TableView fx:id="tblProduct" layoutX="18.0" layoutY="256.0" prefHeight="220.0" prefWidth="975.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="116.0" text="#Id" />
+                <TableColumn fx:id="colCategory" prefWidth="154.0" text="Category" />
+                  <TableColumn fx:id="colDescription" minWidth="5.0" prefWidth="352.0" text="Description" />
+                  <TableColumn fx:id="colBrand" prefWidth="129.0" text="Brand" />
+                  <TableColumn fx:id="colDelete" prefWidth="115.0" text="Delete" />
+                  <TableColumn fx:id="colModify" prefWidth="108.0" text="Modify" />
+              </columns>
+            </TableView>
+            <ImageView fx:id="txtProductImage" fitHeight="172.0" fitWidth="188.0" layoutX="18.0" layoutY="18.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/Empire-State-Building-view-from-uptown_by_Laurence-Norah-2.jpg" />
+               </image>
+            </ImageView>
+            <JFXComboBox fx:id="cmbSupplier" focusColor="#ff500a" labelFloat="true" layoutX="247.0" layoutY="94.0" prefHeight="38.0" prefWidth="226.0" promptText="Supplier" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="60.0" prefWidth="1014.0" style="-fx-background-color: FF500A;">
+         <children>
+            <Label layoutX="47.0" layoutY="16.0" text="Product Management" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="851.0" layoutY="16.0" text="Admin Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="366.0" layoutY="13.0" prefHeight="35.0" prefWidth="270.0" promptText="Search Here" style="-fx-background-radius: 50;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="969.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons/icons8-expand-arrow-52.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="14.0" layoutY="16.0" onMouseClicked="#backToHomeOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons/icons8-double-left-52.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

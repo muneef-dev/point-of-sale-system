@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="authoritiesContext" prefHeight="555.0" prefWidth="1014.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.ManageAuthoritiesFormController">
+   <children>
+      <AnchorPane layoutY="60.0" prefHeight="495.0" prefWidth="1014.0">
+         <children>
+            <TextField fx:id="txtSearch" layoutX="18.0" layoutY="21.0" prefHeight="38.0" prefWidth="870.0" promptText="Search here">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <TableView fx:id="tblAuthorities" layoutX="18.0" layoutY="81.0" prefHeight="398.0" prefWidth="975.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="131.0" text="#Id" />
+                <TableColumn fx:id="colUserName" prefWidth="278.0" text="User Name" />
+                  <TableColumn fx:id="colAvailability" minWidth="5.0" prefWidth="179.0" text="Availability" />
+                  <TableColumn fx:id="colUserRole" prefWidth="172.0" text="User Role" />
+                  <TableColumn fx:id="colDisplayName" prefWidth="214.0" text="Display Name" />
+              </columns>
+            </TableView>
+            <JFXButton buttonType="RAISED" layoutX="908.0" layoutY="20.0" onAction="#popUpOnAction" prefHeight="40.0" prefWidth="85.0" style="-fx-background-color: F9EBEA; -fx-border-color: FF500A;" text="PopUp">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="60.0" prefWidth="1014.0" style="-fx-background-color: FF500A;">
+         <children>
+            <Label layoutX="47.0" layoutY="16.0" text="Authorities" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="851.0" layoutY="16.0" text="Admin Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="366.0" layoutY="13.0" prefHeight="35.0" prefWidth="270.0" promptText="Search Here" style="-fx-background-radius: 50;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="969.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons/icons8-expand-arrow-52.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="14.0" layoutY="16.0" onMouseClicked="#backToHomeOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons/icons8-double-left-52.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
